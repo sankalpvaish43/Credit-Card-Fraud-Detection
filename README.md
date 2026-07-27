@@ -71,40 +71,42 @@ These results show that the model performs well despite the highly imbalanced na
 
 ## Visualizations
 
-### Class Distribution
+### Data Analysis
 
-![Class Distribution](graphs/class_distribution.png)
+<p align="center">
+  <img src="graphs/class_distribution.png" width="48%">
+  <img src="graphs/transaction_amount_distribution.png" width="48%">
+</p>
 
-### Transaction Amount Distribution
-
-![Transaction Amount Distribution](graphs/transaction_amount_distribution.png)
-
-### Transaction Time Distribution
-
-![Transaction Time Distribution](graphs/transaction_time_distribution.png)
-
-### Random Forest Confusion Matrix
-
-![Random Forest Confusion Matrix](graphs/random_forest_confusion_matrix.png)
-
-### Random Forest ROC Curve
-
-![Random Forest ROC Curve](graphs/random_forest_roc_curve.png)
-
-### XGBoost Confusion Matrix
-
-![XGBoost Confusion Matrix](graphs/xgboost_confusion_matrix.png)
-
-### XGBoost ROC Curve
-
-![XGBoost ROC Curve](graphs/xgboost_roc_curve.png)
-
-### Random Forest vs XGBoost Comparison
-
-![Random Forest vs XGBoost](graphs/random_forest_vs_xgboost.png)
+<p align="center">
+  <img src="graphs/transaction_time_distribution.png" width="60%">
+</p>
 
 ---
 
+### Random Forest Results
+
+<p align="center">
+  <img src="graphs/random_forest_confusion_matrix.png" width="48%">
+  <img src="graphs/random_forest_roc_curve.png" width="48%">
+</p>
+
+---
+
+### XGBoost Results
+
+<p align="center">
+  <img src="graphs/xgboost_confusion_matrix.png" width="48%">
+  <img src="graphs/xgboost_roc_curve.png" width="48%">
+</p>
+
+---
+
+### Model Comparison
+
+<p align="center">
+  <img src="graphs/random_forest_vs_xgboost.png" width="70%">
+</p>
 ## Project Structure
 
 ```
