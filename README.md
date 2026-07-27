@@ -1,132 +1,172 @@
-# 💳 Credit Card Fraud Detection using Machine Learning
+# Credit Card Fraud Detection using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 
-This project focuses on detecting fraudulent credit card transactions using Machine Learning. Since fraudulent transactions represent only a tiny fraction of all transactions, the dataset is highly imbalanced. The project demonstrates how to preprocess such data, train a machine learning model, and evaluate its performance using appropriate classification metrics.
+This project focuses on finding credit card transactions using Machine Learning. Because fraudulent transactions are a small part of all transactions the data set is very unbalanced. The project shows how to prepare this kind of data train a machine learning model and check how well the model works using the classification measurements.
 
-A **Random Forest Classifier** was used to classify transactions as either **Legitimate** or **Fraudulent**, achieving excellent performance while maintaining high precision and recall for the minority class.
-
----
-
-## 📂 Dataset
-
-This project uses the **Credit Card Fraud Detection** dataset downloaded from **Kaggle**.
-
-- **Total Transactions:** 284,807
-- **Fraudulent Transactions:** 492
-- **Legitimate Transactions:** 284,315
-
-The dataset contains anonymized numerical features (`V1`–`V28`), along with **Time**, **Amount**, and the target variable **Class**.
-
-- **Class = 0** → Legitimate Transaction
-- **Class = 1** → Fraudulent Transaction
-
-> **Note:** The dataset is not included in this repository due to licensing and size considerations. You can download it from Kaggle and place it in the project directory before running the notebook.
+A Random Forest Classifier was used to decide if transactions are Legitimate or Fraudulent. This model worked well and kept high precision and recall for the small group.
 
 ---
 
-## 🛠️ Technologies Used
+## Dataset
+
+This project uses the Credit Card Fraud Detection data set that was taken from Kaggle.
+
+- Total Transactions: 284,807
+
+- Fraudulent Transactions: 492
+
+- Legitimate Transactions: 284,315
+
+The data set has features (V1 to V28) along with Time, Amount and the target variable Class.
+
+- Class = 0 → Legitimate Transaction
+
+- Class = 1 → Fraudulent Transaction
+
+> Note: The data set is not part of this repository because of licensing and size reasons. You can get it from Kaggle. Put it in the project folder before running the notebook.
+
+---
+
+## Technologies Used
 
 - Python
+
 - Pandas
+
 - NumPy
+
 - Matplotlib
+
 - Scikit-learn
+
 - Jupyter Notebook
 
 ---
 
-## ⚙️ Project Workflow
+## Project Workflow
 
 - Data Loading
+
 - Exploratory Data Analysis (EDA)
+
 - Data Preprocessing
-- Train-Test Split
+
+- Train Test Split
+
 - Random Forest Model Training
+
 - Model Evaluation
+
 - Performance Analysis
 
 ---
 
-## 🤖 Machine Learning Model
+## Machine Learning Model
 
 - Random Forest Classifier
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 | Metric | Score |
-|---------|--------|
-| Accuracy | **99.96%** |
-| Precision | **95%** |
-| Recall | **78%** |
-| F1-Score | **85%** |
-| ROC-AUC | **0.97** |
 
-> Results may vary slightly depending on random initialization and train-test split.
+|---------|--------|
+
+| Accuracy | **99.96%** |
+
+| Precision **95%** |
+
+| Recall | **78%** |
+
+F1-Score | **85%** |
+
+ROC-AUC | **0.97** |
+
+> Results might be a little different depending on how things are randomly set up and how the data is split.
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
-The model was evaluated using:
+The model was checked using:
 
 - Accuracy
+
 - Precision
+
 - Recall
+
 - F1-Score
+
 - ROC-AUC Score
+
 - Confusion Matrix
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
+
 Credit-Card-Fraud-Detection/
+
 │
+
 ├── credit_card_fraud_detection.ipynb
+
 ├── README.md
+
 ├── requirements.txt
+
 └── analysis
+
 ```
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 Clone the repository:
 
 ```bash
+
 git clone https://github.com/sankalpvaish43/Credit-Card-Fraud-Detection.git
+
 ```
 
-Navigate to the project directory:
+Go to the project folder:
 
 ```bash
+
 cd Credit-Card-Fraud-Detection
+
 ```
 
-Install the required libraries:
+Install the needed libraries:
 
 ```bash
+
 pip install -r requirements.txt
+
 ```
 
-Launch Jupyter Notebook:
+Start Jupyter Notebook:
 
 ```bash
-jupyter notebook
+
+notebook
+
 ```
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
-This project uses the **Credit Card Fraud Detection** dataset downloaded from **Kaggle**. Thanks to the dataset contributors for making it publicly available for research and educational purposes.
+This project uses the Credit Card Fraud Detection data set that was taken from Kaggle. Thanks to the people who made the data set available, for research and learning.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Sankalp Vaish**
 
