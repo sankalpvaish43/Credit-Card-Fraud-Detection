@@ -2,126 +2,119 @@
 
 ## Project Overview
 
-This project focuses on finding credit card transactions using Machine Learning. Because fraudulent transactions are a small part of all transactions the data set is very unbalanced. The project shows how to prepare this kind of data train a machine learning model and check how well the model works using the classification measurements.
+Credit card fraud is a major challenge in the banking industry because fraudulent transactions make up only a very small percentage of all transactions. In this project, I built a machine learning model to identify fraudulent credit card transactions using the publicly available Kaggle Credit Card Fraud Detection dataset.
 
-A Random Forest Classifier was used to decide if transactions are Legitimate or Fraudulent. This model worked well and kept high precision and recall for the small group.
+The project covers the complete machine learning workflow, including data exploration, preprocessing, model training, and evaluation. A Random Forest Classifier was used to classify transactions as either legitimate or fraudulent, and its performance was evaluated using several classification metrics.
 
 ---
 
 ## Dataset
 
-This project uses the Credit Card Fraud Detection data set that was taken from Kaggle.
+The dataset used in this project was downloaded from **Kaggle**.
 
-- Total Transactions: 284,807
+- **Total Transactions:** 284,807
+- **Legitimate Transactions:** 284,315
+- **Fraudulent Transactions:** 492
 
-- Fraudulent Transactions: 492
+The dataset contains anonymized features (`V1`–`V28`) generated using PCA, along with **Time**, **Amount**, and the target column **Class**.
 
-- Legitimate Transactions: 284,315
+- **Class = 0** → Legitimate Transaction
+- **Class = 1** → Fraudulent Transaction
 
-The data set has features (V1 to V28) along with Time, Amount and the target variable Class.
-
-- Class = 0 → Legitimate Transaction
-
-- Class = 1 → Fraudulent Transaction
-
-> Note: The data set is not part of this repository because of licensing and size reasons. You can get it from Kaggle. Put it in the project folder before running the notebook.
+> **Note:** The dataset is not included in this repository. You can download it from Kaggle and place it in the project folder before running the notebook.
 
 ---
 
 ## Technologies Used
 
 - Python
-
 - Pandas
-
 - NumPy
-
 - Matplotlib
-
 - Scikit-learn
-
 - Jupyter Notebook
 
 ---
 
 ## Project Workflow
 
-- Data Loading
-
-- Exploratory Data Analysis (EDA)
-
-- Data Preprocessing
-
-- Train Test Split
-
-- Random Forest Model Training
-
-- Model Evaluation
-
-- Performance Analysis
+- Load and explore the dataset
+- Analyze the class imbalance
+- Preprocess the data
+- Split the dataset into training and testing sets
+- Train a Random Forest model
+- Evaluate the model using multiple performance metrics
+- Compare results with XGBoost
 
 ---
 
-## Machine Learning Model
+## Machine Learning Models
 
 - Random Forest Classifier
+- XGBoost Classifier (for comparison)
 
 ---
 
 ## Model Performance
 
 | Metric | Score |
-
 |---------|--------|
-
 | Accuracy | **99.96%** |
-
-| Precision **95%** |
-
+| Precision | **95%** |
 | Recall | **78%** |
+| F1-Score | **85%** |
+| ROC-AUC | **0.97** |
 
-F1-Score | **85%** |
-
-ROC-AUC | **0.97** |
-
-> Results might be a little different depending on how things are randomly set up and how the data is split.
+These results show that the model performs well despite the highly imbalanced nature of the dataset.
 
 ---
 
-## Evaluation Metrics
+## Visualizations
 
-The model was checked using:
+### Class Distribution
 
-- Accuracy
+![Class Distribution](graphs/class_distribution.png)
 
-- Precision
+### Transaction Amount Distribution
 
-- Recall
+![Transaction Amount Distribution](graphs/transaction_amount_distribution.png)
 
-- F1-Score
+### Transaction Time Distribution
 
-- ROC-AUC Score
+![Transaction Time Distribution](graphs/transaction_time_distribution.png)
 
-- Confusion Matrix
+### Random Forest Confusion Matrix
+
+![Random Forest Confusion Matrix](graphs/random_forest_confusion_matrix.png)
+
+### Random Forest ROC Curve
+
+![Random Forest ROC Curve](graphs/random_forest_roc_curve.png)
+
+### XGBoost Confusion Matrix
+
+![XGBoost Confusion Matrix](graphs/xgboost_confusion_matrix.png)
+
+### XGBoost ROC Curve
+
+![XGBoost ROC Curve](graphs/xgboost_roc_curve.png)
+
+### Random Forest vs XGBoost Comparison
+
+![Random Forest vs XGBoost](graphs/random_forest_vs_xgboost.png)
 
 ---
 
 ## Project Structure
 
 ```
-
 Credit-Card-Fraud-Detection/
-
 │
-
 ├── credit_card_fraud_detection.ipynb
-
 ├── README.md
-
 ├── requirements.txt
-
-└── analysis
-
+├── graphs/
+└── .gitignore
 ```
 
 ---
@@ -131,38 +124,32 @@ Credit-Card-Fraud-Detection/
 Clone the repository:
 
 ```bash
-
 git clone https://github.com/sankalpvaish43/Credit-Card-Fraud-Detection.git
-
 ```
 
-Go to the project folder:
+Move into the project directory:
 
 ```bash
-
 cd Credit-Card-Fraud-Detection
-
 ```
 
-Install the needed libraries:
+Install the required libraries:
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
-Start Jupyter Notebook:
+Run the notebook:
 
 ```bash
-
-notebook
-
+jupyter notebook
 ```
+
+---
 
 ## Acknowledgements
 
-This project uses the Credit Card Fraud Detection data set that was taken from Kaggle. Thanks to the people who made the data set available, for research and learning.
+This project uses the Credit Card Fraud Detection dataset provided on Kaggle. Thanks to the dataset contributors for making it publicly available for educational and research purposes.
 
 ---
 
